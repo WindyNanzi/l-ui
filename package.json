@@ -1,0 +1,22 @@
+{
+  "name": "l-ui",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vue": "^3.4.35"
+  },
+  "dependencies": {
+    "@l-ui/components": "workspace:^",
+    "@l-ui/utils": "workspace:^"
+  }
+}
