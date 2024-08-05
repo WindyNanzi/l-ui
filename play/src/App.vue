@@ -1,5 +1,5 @@
 <script setup lang="ts">
-console.log("sss")
+console.log("sss");
 </script>
 
 <template>
