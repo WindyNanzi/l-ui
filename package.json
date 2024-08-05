@@ -1,22 +1,36 @@
 {
   "name": "l-ui",
-  "private": "true",
   "version": "1.0.0",
+  "private": "true",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm -C play dev"
+    "dev": "pnpm -C play dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.5.4",
-    "vue": "^3.4.35"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   },
   "dependencies": {
     "@l-ui/components": "workspace:^",
+    "@l-ui/theme-chalk": "workspace:^",
     "@l-ui/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.1",
+    "eslint": "^9.8.0",
+    "lint-staged": "^15.2.8",
+    "sass": "^1.77.8",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.35"
   }
 }

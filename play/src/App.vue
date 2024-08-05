@@ -1,9 +1,15 @@
 <script setup lang="ts">
 
 </script>
+
 <template>
   <div>
-    测试
+    <l-icon color="red" :size="14" style="margin-right: 10px;">
+      <i-uiw-adobe />
+    </l-icon>
+    <l-icon color="yellow" :size="14">
+      <i-uiw-android-o />
+    </l-icon>
   </div>
 </template>
 
