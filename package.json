@@ -17,7 +17,9 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.vue": "eslint --fix",
+    "*.ts": "eslint --fix",
+    "*.js": "eslint --fix"
   },
   "dependencies": {
     "@l-ui/components": "workspace:^",
