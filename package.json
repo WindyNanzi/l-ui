@@ -13,14 +13,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*.vue": "eslint --fix",
-    "*.ts": "eslint --fix",
-    "*.js": "eslint --fix"
-  },
   "dependencies": {
     "@l-ui/components": "workspace:^",
     "@l-ui/theme-chalk": "workspace:^",
@@ -34,5 +26,11 @@
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.4",
     "vue": "^3.4.35"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
