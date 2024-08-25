@@ -44,14 +44,6 @@ function createNameSpace(name: string) {
   return createBEM(prefixName)
 }
 
-// const bem = createNameSpace('icon')
-// console.log(bem.b('box'))
-// console.log(bem.e('element'))
-// console.log(bem.m('modifier'))
-// console.log(bem.be('box'))
-// console.log(bem.em('box'))
-// console.log(bem.bem('box'))
-
 export {
   createNameSpace,
 }
